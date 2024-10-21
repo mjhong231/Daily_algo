@@ -2,7 +2,7 @@
 
 
 # N과 M(2)
-
+```
 N, M = map(int, input().split())
 path = []
 visited = [False] * (N + 1)  # 중복없이
@@ -22,9 +22,9 @@ def dfs(start, level):
 
 
 dfs(1, 0)
-
+```
 # N과 M (4)
-
+```
 N, M = map(int, input().split())
 
 path = []
@@ -41,9 +41,9 @@ def dfs(start, level):
 
 
 dfs(1, 0)
-
+```
 # N과 M (5)
-
+```
 N, M = map(int, input().split())
 lst = sorted(list(map(int, input().split())))
 
@@ -63,10 +63,10 @@ def dfs(level):
         visited[i] = False
 
 dfs(0)
-
+```
 
 # 헌내기는 친구가 필요해
-
+```
 from collections import deque
 import sys
 input = sys.stdin.readline
@@ -106,4 +106,4 @@ def bfs():
                     q.append((ny, nx))
 
 bfs()
-print('TT' if cnt == 0 else cnt)
+print('TT' if cnt == 0 else cnt)```
