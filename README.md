@@ -106,4 +106,5 @@ def bfs():
                     q.append((ny, nx))
 
 bfs()
-print('TT' if cnt == 0 else cnt)```
+print('TT' if cnt == 0 else cnt)
+```
