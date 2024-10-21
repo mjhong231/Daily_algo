@@ -1,4 +1,3 @@
-# Daily_algo
 
 
 # N과 M(2)
