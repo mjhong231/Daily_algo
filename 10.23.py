@@ -1,5 +1,4 @@
-# 미로 탐색
-```
+# 미로탐색
 from collections import deque
 
 import sys
@@ -26,10 +25,9 @@ def bfs(a, b):
 
 bfs(0, 0)
 print(arr[N-1][M-1])
-```
----
+
 # 유기농 배추
-```
+
 from collections import deque
 import sys
 input = sys.stdin.readline
@@ -70,14 +68,11 @@ for tc in range(1, T+1):
                 bfs(i, j)
     print(cnt)
 
-```
----
+
 
 # 치킨 배달
 
-1. itertools.combination 사용
-   
-```
+# 1. itertools combination 사용
 from itertools import combinations
 import sys
 input = sys.stdin.readline
@@ -109,11 +104,13 @@ for chicken in combinations(chickens, M):
 
 
 print(result)
-```
 
 
-2. M과 N에서 이용했던 재귀 dfs로 combinations 기능 대신 구현
-```
+
+
+# 2. 재귀 dfs로 combinations 구현
+
+
 import sys
 input = sys.stdin.readline
 
@@ -149,7 +146,6 @@ def dfs(start, path):
     for i in range(start, len(chickens)):  # 치킨집들 중 가게를 뽑아서
         dfs(i+1, path + [chickens[i]])     # path에 더해서 재귀 호출
 
-dfs(0, [])  # 아무것도 없는 빈 리스트 path로 시작 
+dfs(0, [])  # 아무것도 없는 빈 리스트 path로 시작
 
 print(result)
-```
